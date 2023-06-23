@@ -1,0 +1,28 @@
+{
+  "name": "311-hackathon",
+  "version": "1.0.0",
+  "description": "Read this ENTIRE document before beginning work.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaseparkeratx/311-Hackathon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaseparkeratx/311-Hackathon/issues"
+  },
+  "homepage": "https://github.com/chaseparkeratx/311-Hackathon#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.4.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "nodemon": "^2.0.22"
+  }
+}
