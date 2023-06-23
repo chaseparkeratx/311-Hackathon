@@ -54,7 +54,7 @@ We will use ONE person's Google Cloud database for this assignment. The steps fo
 
 2. Type `quit` when you want to exit the process
 
-#### Import data
+#### Import data*****
 
 We are going to use sample data given to use by MySQL. An overview of the process exists here: https://dev.mysql.com/doc/employee/en/
 
