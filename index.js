@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const pool = require('./sql/connection')
+const moviesRouter = require("./routes/movies")
 
 //view ENV
 require('dotenv').config()
@@ -9,20 +9,12 @@ const PORT = process.env.PORT || 3306
 
 app.use(express.json())
 
-app.get("/", (req, res) => {
-    res.json({
-        message: "Welcome to first API"
-    })
-})
+app.use("/", moviesRouter)
+
+
 
 //get all movies
-app.get("/movies", (req, res) => {
-    // console.log(pool)
-    pool.query("SELECT * FROM ?? ", ["movies"], (err,rows,fields) => {
-        console.log(rows)
-        res.json(rows)
-    })
-})
+
 
 // //get a user by ID
 // app.get("/users/:id", (req, res) => {
