@@ -2,7 +2,7 @@ const mysql = require('mysql2')
 const pool = require('../sql/connection')
 
 const list = (req, res) => {
-    // SELECT ALL MovieS
+    // SELECT ALL MOVIES
     pool.query("SELECT * FROM ??", ["movies"], (err, rows) => {
       if (err) return handleSQLError(res, err)
       return res.json(rows);

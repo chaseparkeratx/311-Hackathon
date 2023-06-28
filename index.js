@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const moviesRouter = require("./routes/movies")
+const actorsRouter = require("./routes/actors")
 
 //view ENV
 require('dotenv').config()
@@ -10,11 +11,9 @@ const PORT = process.env.PORT || 3306
 app.use(express.json())
 
 app.use("/", moviesRouter)
-
-
+app.use("/", actorsRouter)
 
 //get all movies
-
 
 // //get a user by ID
 // app.get("/users/:id", (req, res) => {
