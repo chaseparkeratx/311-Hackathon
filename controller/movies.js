@@ -22,15 +22,15 @@ const show = (req, res) => {
 
 const create = (req, res) => {
     const {body} = req
-    const {title, release_year} = body
+    const {title, release_year} = body    
 
     pool.query(`INSERT INTO ?? (??, ??) VALUES (?, ?)`,
     ["movies", "title", "release_year", title, release_year],
 
-    (err,row,fields) => {
-    console.log(row)
+    (err,row, fields) => {
+    console.log(row,"row")
         res.json({
-        message: `Successfully inserted movie into id: ${row.insertId}`
+         message: `Successfully inserted movie into id: ${row.insertId}`
         })
     })
 }

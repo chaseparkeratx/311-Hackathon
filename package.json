@@ -1,5 +1,5 @@
 {
-  "name": "311-hackathon",
+  "name": "y",
   "version": "1.0.0",
   "description": "Read this ENTIRE document before beginning work.",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/chaseparkeratx/311-Hackathon.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "y",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chaseparkeratx/311-Hackathon/issues"

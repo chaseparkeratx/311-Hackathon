@@ -9,6 +9,8 @@ router.get('/movies', moviesController.list)
 //get by ID
 router.get('/movies/:id', moviesController.show)
 
+router.get()
+
 //create/add movie
 router.post('/movies', moviesController.create)
 
