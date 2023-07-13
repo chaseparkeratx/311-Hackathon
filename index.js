@@ -13,6 +13,8 @@ app.use(express.json())
 app.use("/", moviesRouter)
 app.use("/", actorsRouter)
 
+// <<<<<<< Bryan
+// =======
 //get all movies
 
 // //get a user by ID
@@ -72,6 +74,7 @@ app.use("/", actorsRouter)
 //     res.json(row.info)
 //     })
 // })
+// >>>>>>> master
 
 
 app.listen(PORT, () => console.log(`I am listening on port ${PORT}`))
